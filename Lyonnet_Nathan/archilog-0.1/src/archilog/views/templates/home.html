@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Budget</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bienvenue sur votre application de gestion de budget !</h1>
+
+    <div class="table-container">
+        <h2>Vos entrées de budget</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Montant</th>
+                    <th>Catégorie</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in entries %}
+                <tr>
+                    <td>{{ entry.id }}</td>
+                    <td>{{ entry.name }}</td>
+                    <td>{{ entry.amount }}</td>
+                    <td>{{ entry.category }}</td>
+                    <td>
+                        <a href="/edit/{{ entry.id }}" class="btn btn-primary">Modifier</a> |
+                        <a href="/delete/{{ entry.id }}" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette entrée ?');">Supprimer</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Ajout d'une nouvelle entrée -->
+    <div class="file-actions">
+        <a href="/add" class="btn btn-success">Ajouter une nouvelle entrée</a>
+    </div>
+
+    <!-- Formulaire d'import / export CSV -->
+    <div class="file-actions">
+        <form action="{{ url_for('import_csv') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Importer</button>
+        </form>
+        <br>
+        <a href="{{ url_for('export_csv') }}" class="btn btn-primary">Exporter en CSV</a>
+    </div>
+
+
+</body>
+</html>

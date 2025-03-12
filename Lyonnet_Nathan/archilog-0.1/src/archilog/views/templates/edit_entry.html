@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier l'entrée</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="form-container">
+        <h1>Modifier une entrée</h1>
+        <form action="/edit/{{ entry.id }}" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" value="{{ entry.name }}" required>
+
+            <label for="amount">Montant :</label>
+            <input type="number" id="amount" name="amount" value="{{ entry.amount }}" required>
+
+            <label for="category">Catégorie :</label>
+            <input type="text" id="category" name="category" value="{{ entry.category }}" required>
+
+            <input type="submit" value="Mettre à jour">
+        </form>
+        <a href="/" class="btn btn-primary">Retour</a>
+    </div>
+
+</body>
+</html>
