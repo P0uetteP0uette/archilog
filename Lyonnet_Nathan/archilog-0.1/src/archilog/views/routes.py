@@ -20,6 +20,9 @@ def add_entry():
             return redirect(url_for('web.home'))
     return render_template('add_entry.html')
 
+# WTForms : on change le name amount category, -> comme des arguments de l'objet form
+# ca va nous permettre d'aller dans nos html et changer les formulaires existants et pouvoir leur rajouter des conditions. faire des trucs dynamique quoi
+
 @web_ui.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit_entry(id):
     entry = models.get_entry(id)

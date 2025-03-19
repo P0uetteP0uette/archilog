@@ -16,5 +16,5 @@ def register_error_handlers(app):
     def handle_internal_error(error):
         """gerer les erruers 500 et logguer l'évé"""
 
-        logging.critical(f"Erreur interne du servezur : {error}",exc_info=True)
+        logging.critical(f"Erreur interne du serveur : {error}",exc_info=True)
         return redirect(url_for("home.html")) # redirection page d'accueil
