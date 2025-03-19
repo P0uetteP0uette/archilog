@@ -1,5 +1,14 @@
-from flask import Blueprint
+from flask import Flask
+from archilog.views.error_handler import register_error_handlers
+from archilog.views.routes import web_ui
 
-web_ui = Blueprint("web", __name__, template_folder="templates")
+# Application factory
+def create_app():
+    app = Flask(__name__)
+    app.config.from_prefixed_env(prefix="ARCHILOG_FLASK")
+    
+    register_error_handlers(app)
 
-from archilog.views.routes import *  # Importer toutes les routes
+    app.register_blueprint(web_ui)
+
+    return app
