@@ -1,0 +1,41 @@
+2025-03-26 15:14:22,721 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-26 15:14:22,721 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-26 15:14:22,737 [INFO]  * Restarting with stat
+2025-03-26 15:14:25,156 [WARNING]  * Debugger is active!
+2025-03-26 15:14:25,169 [INFO]  * Debugger PIN: 467-516-806
+2025-03-26 15:14:37,147 [INFO] BEGIN (implicit)
+2025-03-26 15:14:37,147 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-26 15:14:37,147 [INFO] [generated in 0.00137s] ()
+2025-03-26 15:14:37,147 [INFO] ROLLBACK
+2025-03-26 15:14:37,168 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:37] "GET / HTTP/1.1" 200 -
+2025-03-26 15:14:37,195 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-26 15:14:51,039 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:51] "GET /add HTTP/1.1" 200 -
+2025-03-26 15:14:51,057 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-26 15:14:59,736 [INFO] BEGIN (implicit)
+2025-03-26 15:14:59,736 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-03-26 15:14:59,736 [INFO] [generated in 0.00151s] ('bjr', 50.0, 'bjr')
+2025-03-26 15:14:59,736 [INFO] COMMIT
+2025-03-26 15:14:59,751 [WARNING] L'entrée bjr, 50, bjr a été ajouté
+2025-03-26 15:14:59,751 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:59] "[32mPOST /add HTTP/1.1[0m" 302 -
+2025-03-26 15:14:59,751 [INFO] BEGIN (implicit)
+2025-03-26 15:14:59,767 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-26 15:14:59,767 [INFO] [cached since 22.61s ago] ()
+2025-03-26 15:14:59,767 [INFO] ROLLBACK
+2025-03-26 15:14:59,767 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:59] "GET / HTTP/1.1" 200 -
+2025-03-26 15:14:59,783 [INFO] 127.0.0.1 - - [26/Mar/2025 15:14:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-03-26 15:15:09,453 [INFO] BEGIN (implicit)
+2025-03-26 15:15:09,453 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-03-26 15:15:09,453 [INFO] [generated in 0.00135s] (9,)
+2025-03-26 15:15:09,453 [INFO] COMMIT
+2025-03-26 15:15:09,532 [WARNING] L'entrée 9 a été supprimé
+2025-03-26 15:15:09,532 [INFO] 127.0.0.1 - - [26/Mar/2025 15:15:09] "[32mGET /delete/9 HTTP/1.1[0m" 302 -
+2025-03-26 15:15:09,532 [INFO] BEGIN (implicit)
+2025-03-26 15:15:09,532 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-03-26 15:15:09,532 [INFO] [cached since 32.39s ago] ()
+2025-03-26 15:15:09,532 [INFO] ROLLBACK
+2025-03-26 15:15:09,532 [INFO] 127.0.0.1 - - [26/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
+2025-03-26 15:15:09,548 [INFO] 127.0.0.1 - - [26/Mar/2025 15:15:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

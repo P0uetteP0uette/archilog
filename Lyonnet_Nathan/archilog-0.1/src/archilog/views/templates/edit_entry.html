@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <title>Modifier l'entrée</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
 </head>
 <body>
     <div class="form-container">
         <h1>Modifier une entrée</h1>
-        <form action="/edit/{{ entry.id }}" method="POST">
+        <form method="POST">
+            {{ form.hidden_tag() }}  <!-- Token CSRF pour la sécurité -->
+            
             <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" value="{{ entry.name }}" required>
-
+            {{ form.name(class="form-control") }}  <!-- Champ de texte pour le nom -->
+            
             <label for="amount">Montant :</label>
-            <input type="number" id="amount" name="amount" value="{{ entry.amount }}" required>
-
+            {{ form.amount(class="form-control") }}  <!-- Champ de nombre pour le montant -->
+            
             <label for="category">Catégorie :</label>
-            <input type="text" id="category" name="category" value="{{ entry.category }}" required>
-
+            {{ form.category(class="form-control") }}  <!-- Champ de texte pour la catégorie -->
+            
             <input type="submit" value="Mettre à jour">
         </form>
         <a href="/" class="btn btn-primary">Retour</a>
     </div>
-
 </body>
 </html>
