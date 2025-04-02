@@ -12,13 +12,13 @@
         <form method="POST">
             {{ form.hidden_tag() }}  <!-- Token CSRF pour la sécurité -->
             
-            <label for="name">Nom :</label>
+            {{ form.name.label }}
             {{ form.name(class="form-control") }}  <!-- Champ de texte pour le nom -->
             
-            <label for="amount">Montant :</label>
+            {{ form.amount.label }}
             {{ form.amount(class="form-control") }}  <!-- Champ de nombre pour le montant -->
             
-            <label for="category">Catégorie :</label>
+            {{ form.category.label }}
             {{ form.category(class="form-control") }}  <!-- Champ de texte pour la catégorie -->
             
             <input type="submit" value="Ajouter">

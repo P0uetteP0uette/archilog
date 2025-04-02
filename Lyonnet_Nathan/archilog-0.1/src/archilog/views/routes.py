@@ -2,15 +2,16 @@ import logging
 from flask import render_template, request, redirect, url_for, Response, Blueprint
 import archilog.models as models
 import archilog.services as services
-from archilog.forms import EditEntryForm, AddEntryForm
+from archilog.forms import EditEntryForm, AddEntryForm, ImportCSVForm
 
 web_ui = Blueprint("web", __name__)
 
 
-@web_ui.route('/')
+@web_ui.route('/', methods=['GET', 'POST'])
 def home():
     entries = models.get_all_entries()
-    return render_template('home.html', entries=entries)
+    form = ImportCSVForm()
+    return render_template('home.html', entries=entries, form=form)
 
 @web_ui.route('/add', methods=['GET', 'POST'])
 def add_entry():
@@ -48,11 +49,25 @@ def delete_entry(id):
     logging.warning(f"L'entrée {id} a été supprimé")
     return redirect(url_for('web.home'))
 
-@web_ui.route('/import_csv', methods=['POST'])
+@web_ui.route('/import_csv', methods=['GET', 'POST'])
 def import_csv():
-    csv_file = request.files['file']
-    services.import_from_csv(csv_file)
-    return redirect(url_for('web.home'))
+    form = ImportCSVForm()
+    
+    if form.validate_on_submit():
+        csv_file = form.file.data  # Récupérer le fichier
+        if not csv_file:
+            logging.warning("Aucun fichier n'a été envoyé")
+            return redirect(url_for('web.home'))
+
+        try:
+            services.import_from_csv(csv_file)  # Appel du service d'import
+            logging.warning("Import CSV réussi")
+        except Exception as e:
+            logging.warning(f"Erreur lors de l'import CSV : {e}")
+        
+        return redirect(url_for('web.home'))
+
+    return render_template('home.html', form=form)
 
 @web_ui.route('/export_csv', methods=['GET'])
 def export_csv():

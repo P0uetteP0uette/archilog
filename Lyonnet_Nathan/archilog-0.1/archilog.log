@@ -39,3 +39,503 @@ FROM entries
 2025-03-26 15:15:09,532 [INFO] ROLLBACK
 2025-03-26 15:15:09,532 [INFO] 127.0.0.1 - - [26/Mar/2025 15:15:09] "GET / HTTP/1.1" 200 -
 2025-03-26 15:15:09,548 [INFO] 127.0.0.1 - - [26/Mar/2025 15:15:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 13:37:37,146 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 13:37:37,146 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 13:37:37,162 [INFO]  * Restarting with stat
+2025-04-02 13:37:39,608 [WARNING]  * Debugger is active!
+2025-04-02 13:37:39,617 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 13:37:50,613 [INFO] BEGIN (implicit)
+2025-04-02 13:37:50,613 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 13:37:50,628 [INFO] [generated in 0.00269s] ()
+2025-04-02 13:37:50,630 [INFO] ROLLBACK
+2025-04-02 13:37:50,645 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:50] "GET / HTTP/1.1" 200 -
+2025-04-02 13:37:50,728 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:50] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-02 13:37:50,728 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-02 13:37:50,744 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-02 13:37:56,282 [INFO] BEGIN (implicit)
+2025-04-02 13:37:56,282 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-02 13:37:56,282 [INFO] [generated in 0.00247s] (8,)
+2025-04-02 13:37:56,329 [INFO] ROLLBACK
+2025-04-02 13:37:56,361 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:56] "GET /edit/8 HTTP/1.1" 200 -
+2025-04-02 13:37:56,377 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 13:37:58,787 [INFO] BEGIN (implicit)
+2025-04-02 13:37:58,789 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-02 13:37:58,790 [INFO] [cached since 2.498s ago] (8,)
+2025-04-02 13:37:58,791 [INFO] ROLLBACK
+2025-04-02 13:37:58,989 [INFO] BEGIN (implicit)
+2025-04-02 13:37:58,989 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-02 13:37:59,004 [INFO] [generated in 0.00549s] ('testaaaaaaa', 50.0, 'test', 8)
+2025-04-02 13:37:59,052 [INFO] COMMIT
+2025-04-02 13:37:59,147 [WARNING] L'entrée testaaaaaaa, 50.00, test a été modifié
+2025-04-02 13:37:59,163 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:59] "[32mPOST /edit/8 HTTP/1.1[0m" 302 -
+2025-04-02 13:37:59,179 [INFO] BEGIN (implicit)
+2025-04-02 13:37:59,243 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 13:37:59,243 [INFO] [cached since 8.63s ago] ()
+2025-04-02 13:37:59,258 [INFO] ROLLBACK
+2025-04-02 13:37:59,288 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:59] "GET / HTTP/1.1" 200 -
+2025-04-02 13:37:59,306 [INFO] 127.0.0.1 - - [02/Apr/2025 13:37:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 13:38:28,598 [INFO] BEGIN (implicit)
+2025-04-02 13:38:28,598 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 13:38:28,598 [INFO] [cached since 37.98s ago] ()
+2025-04-02 13:38:28,598 [INFO] ROLLBACK
+2025-04-02 13:38:28,613 [INFO] 127.0.0.1 - - [02/Apr/2025 13:38:28] "GET / HTTP/1.1" 200 -
+2025-04-02 13:38:28,614 [INFO] 127.0.0.1 - - [02/Apr/2025 13:38:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 13:40:24,263 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\forms.py', reloading
+2025-04-02 13:40:24,315 [INFO]  * Restarting with stat
+2025-04-02 13:40:36,567 [INFO]  * Restarting with stat
+2025-04-02 13:40:40,086 [WARNING]  * Debugger is active!
+2025-04-02 13:40:40,535 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 13:54:50,993 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 13:54:51,030 [INFO]  * Restarting with stat
+2025-04-02 13:54:53,919 [WARNING]  * Debugger is active!
+2025-04-02 13:54:53,919 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 13:55:00,319 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 13:55:00,358 [INFO]  * Restarting with stat
+2025-04-02 13:55:03,144 [WARNING]  * Debugger is active!
+2025-04-02 13:55:03,151 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 13:57:16,520 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 13:57:16,553 [INFO]  * Restarting with stat
+2025-04-02 13:57:19,719 [WARNING]  * Debugger is active!
+2025-04-02 13:57:19,729 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:03:45,675 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 14:03:45,680 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 14:03:45,696 [INFO]  * Restarting with stat
+2025-04-02 14:03:48,466 [WARNING]  * Debugger is active!
+2025-04-02 14:03:48,476 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:05:13,541 [INFO] BEGIN (implicit)
+2025-04-02 14:05:13,541 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:05:13,541 [INFO] [generated in 0.00168s] ()
+2025-04-02 14:05:13,541 [INFO] ROLLBACK
+2025-04-02 14:05:13,698 [INFO] 127.0.0.1 - - [02/Apr/2025 14:05:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:05:13,793 [INFO] 127.0.0.1 - - [02/Apr/2025 14:05:13] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-02 14:05:13,793 [INFO] 127.0.0.1 - - [02/Apr/2025 14:05:13] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-02 14:05:13,825 [INFO] 127.0.0.1 - - [02/Apr/2025 14:05:13] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=WhGSYI7SUWECGO17aVaW HTTP/1.1" 200 -
+2025-04-02 14:16:24,599 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\forms.py', reloading
+2025-04-02 14:16:24,647 [INFO]  * Restarting with stat
+2025-04-02 14:16:27,909 [WARNING]  * Debugger is active!
+2025-04-02 14:16:27,926 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:18:10,209 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:18:10,260 [INFO]  * Restarting with stat
+2025-04-02 14:18:18,010 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 14:18:18,010 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 14:18:18,026 [INFO]  * Restarting with stat
+2025-04-02 14:18:20,507 [WARNING]  * Debugger is active!
+2025-04-02 14:18:20,510 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:18:22,670 [INFO] BEGIN (implicit)
+2025-04-02 14:18:22,670 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:22,670 [INFO] [generated in 0.00156s] ()
+2025-04-02 14:18:22,686 [INFO] ROLLBACK
+2025-04-02 14:18:22,796 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:22,845 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:22] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:22,849 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:22] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:22,868 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:22] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1" 200 -
+2025-04-02 14:18:24,257 [INFO] BEGIN (implicit)
+2025-04-02 14:18:24,257 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:24,259 [INFO] [cached since 1.575s ago] ()
+2025-04-02 14:18:24,259 [INFO] ROLLBACK
+2025-04-02 14:18:24,320 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:24,320 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,320 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,336 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,472 [INFO] BEGIN (implicit)
+2025-04-02 14:18:24,472 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:24,479 [INFO] [cached since 1.799s ago] ()
+2025-04-02 14:18:24,479 [INFO] ROLLBACK
+2025-04-02 14:18:24,718 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:24,734 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,734 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,751 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:24,765 [INFO] BEGIN (implicit)
+2025-04-02 14:18:24,770 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:24,770 [INFO] [cached since 2.093s ago] ()
+2025-04-02 14:18:24,781 [INFO] ROLLBACK
+2025-04-02 14:18:24,956 [INFO] BEGIN (implicit)
+2025-04-02 14:18:24,956 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:24,968 [INFO] [cached since 2.284s ago] ()
+2025-04-02 14:18:24,970 [INFO] ROLLBACK
+2025-04-02 14:18:24,986 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:25,113 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:25,129 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,129 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,144 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,239 [INFO] BEGIN (implicit)
+2025-04-02 14:18:25,239 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:25,239 [INFO] [cached since 2.56s ago] ()
+2025-04-02 14:18:25,239 [INFO] ROLLBACK
+2025-04-02 14:18:25,333 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:25,349 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,349 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,349 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,492 [INFO] BEGIN (implicit)
+2025-04-02 14:18:25,508 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:25,508 [INFO] [cached since 2.826s ago] ()
+2025-04-02 14:18:25,508 [INFO] ROLLBACK
+2025-04-02 14:18:25,602 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:25,618 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,618 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,634 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,650 [INFO] BEGIN (implicit)
+2025-04-02 14:18:25,650 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:25,650 [INFO] [cached since 2.974s ago] ()
+2025-04-02 14:18:25,650 [INFO] ROLLBACK
+2025-04-02 14:18:25,777 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:25,784 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,784 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:25,792 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:25] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=FNkpuOTD0TKFZ81PMfW9 HTTP/1.1[0m" 304 -
+2025-04-02 14:18:38,752 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 14:18:38,752 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 14:18:38,768 [INFO]  * Restarting with stat
+2025-04-02 14:18:41,292 [WARNING]  * Debugger is active!
+2025-04-02 14:18:41,305 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:18:42,811 [INFO] BEGIN (implicit)
+2025-04-02 14:18:42,811 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:18:42,811 [INFO] [generated in 0.00164s] ()
+2025-04-02 14:18:42,811 [INFO] ROLLBACK
+2025-04-02 14:18:42,922 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:42] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:18:42,956 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:42] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:18:42,982 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:42] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:18:43,007 [INFO] 127.0.0.1 - - [02/Apr/2025 14:18:43] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=NMQT3KxmXvC4nGFSfjEl HTTP/1.1" 200 -
+2025-04-02 14:28:25,130 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 14:28:25,130 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 14:28:25,146 [INFO]  * Restarting with stat
+2025-04-02 14:28:27,456 [WARNING]  * Debugger is active!
+2025-04-02 14:28:27,456 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:28:27,885 [INFO] BEGIN (implicit)
+2025-04-02 14:28:27,885 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:27,885 [INFO] [generated in 0.00148s] ()
+2025-04-02 14:28:27,885 [INFO] ROLLBACK
+2025-04-02 14:28:27,995 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:28,027 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:28:28,043 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:28,059 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1" 200 -
+2025-04-02 14:28:28,660 [INFO] BEGIN (implicit)
+2025-04-02 14:28:28,660 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:28,660 [INFO] [cached since 0.7668s ago] ()
+2025-04-02 14:28:28,660 [INFO] ROLLBACK
+2025-04-02 14:28:28,723 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:28,728 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:28:28,728 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:28,728 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,104 [INFO] BEGIN (implicit)
+2025-04-02 14:28:29,104 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:29,104 [INFO] [cached since 1.224s ago] ()
+2025-04-02 14:28:29,104 [INFO] ROLLBACK
+2025-04-02 14:28:29,168 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:29,184 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-02 14:28:29,184 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,194 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1" 200 -
+2025-04-02 14:28:29,484 [INFO] BEGIN (implicit)
+2025-04-02 14:28:29,484 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:29,484 [INFO] [cached since 1.597s ago] ()
+2025-04-02 14:28:29,484 [INFO] ROLLBACK
+2025-04-02 14:28:29,547 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:29,547 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,547 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,563 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,770 [INFO] BEGIN (implicit)
+2025-04-02 14:28:29,770 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:29,770 [INFO] [cached since 1.881s ago] ()
+2025-04-02 14:28:29,770 [INFO] ROLLBACK
+2025-04-02 14:28:29,833 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:29,833 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,833 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:29,849 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:29] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1[0m" 304 -
+2025-04-02 14:28:30,039 [INFO] BEGIN (implicit)
+2025-04-02 14:28:30,039 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:28:30,039 [INFO] [cached since 2.158s ago] ()
+2025-04-02 14:28:30,039 [INFO] ROLLBACK
+2025-04-02 14:28:30,103 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:28:30,119 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:30] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:28:30,119 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:28:30,126 [INFO] 127.0.0.1 - - [02/Apr/2025 14:28:30] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=r5LVpt0w5Mwqh9yzoaQa HTTP/1.1[0m" 304 -
+2025-04-02 14:32:20,971 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:32:21,019 [INFO]  * Restarting with stat
+2025-04-02 14:32:24,059 [WARNING]  * Debugger is active!
+2025-04-02 14:32:24,068 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:34:59,340 [INFO] BEGIN (implicit)
+2025-04-02 14:34:59,340 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:34:59,340 [INFO] [generated in 0.00238s] ()
+2025-04-02 14:34:59,340 [INFO] ROLLBACK
+2025-04-02 14:34:59,629 [INFO] 127.0.0.1 - - [02/Apr/2025 14:34:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:34:59,720 [INFO] 127.0.0.1 - - [02/Apr/2025 14:34:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:34:59,736 [INFO] 127.0.0.1 - - [02/Apr/2025 14:34:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:34:59,763 [INFO] 127.0.0.1 - - [02/Apr/2025 14:34:59] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0KtZRFVZ4yPABMWsKVvd HTTP/1.1" 200 -
+2025-04-02 14:36:26,183 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:36:26,250 [INFO]  * Restarting with stat
+2025-04-02 14:36:29,654 [WARNING]  * Debugger is active!
+2025-04-02 14:36:29,670 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:36:30,066 [INFO] BEGIN (implicit)
+2025-04-02 14:36:30,075 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:36:30,075 [INFO] [generated in 0.00596s] ()
+2025-04-02 14:36:30,082 [INFO] ROLLBACK
+2025-04-02 14:36:30,192 [INFO] 127.0.0.1 - - [02/Apr/2025 14:36:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:36:30,227 [INFO] 127.0.0.1 - - [02/Apr/2025 14:36:30] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-02 14:36:30,239 [INFO] 127.0.0.1 - - [02/Apr/2025 14:36:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:36:30,257 [INFO] 127.0.0.1 - - [02/Apr/2025 14:36:30] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=62brLuSfsuE6iuN6VfDo HTTP/1.1" 200 -
+2025-04-02 14:37:55,708 [INFO] BEGIN (implicit)
+2025-04-02 14:37:55,708 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:37:55,708 [INFO] [cached since 85.64s ago] ()
+2025-04-02 14:37:55,708 [INFO] ROLLBACK
+2025-04-02 14:37:55,867 [INFO] BEGIN (implicit)
+2025-04-02 14:37:55,867 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:37:55,867 [INFO] [cached since 85.8s ago] ()
+2025-04-02 14:37:55,867 [INFO] ROLLBACK
+2025-04-02 14:37:55,883 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:37:55,978 [INFO] BEGIN (implicit)
+2025-04-02 14:37:55,994 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:37:55,994 [INFO] [cached since 85.92s ago] ()
+2025-04-02 14:37:55,994 [INFO] ROLLBACK
+2025-04-02 14:37:56,010 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:37:56,169 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:37:56,200 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-02 14:37:56,200 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:37:56,216 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=62brLuSfsuE6iuN6VfDo HTTP/1.1" 200 -
+2025-04-02 14:37:56,234 [INFO] 127.0.0.1 - - [02/Apr/2025 14:37:56] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-02 14:39:44,433 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:39:44,487 [INFO]  * Restarting with stat
+2025-04-02 14:39:48,394 [WARNING]  * Debugger is active!
+2025-04-02 14:39:48,410 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:39:49,091 [INFO] BEGIN (implicit)
+2025-04-02 14:39:49,107 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:39:49,107 [INFO] [generated in 0.00736s] ()
+2025-04-02 14:39:49,107 [INFO] ROLLBACK
+2025-04-02 14:39:49,250 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:39:49,287 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:49] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-02 14:39:49,303 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:49] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:39:49,313 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:49] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=XUVIlGKR94tlqVcVwVPL HTTP/1.1" 200 -
+2025-04-02 14:39:50,950 [INFO] BEGIN (implicit)
+2025-04-02 14:39:50,965 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:39:50,965 [INFO] [cached since 1.863s ago] ()
+2025-04-02 14:39:50,972 [INFO] ROLLBACK
+2025-04-02 14:39:51,140 [INFO] BEGIN (implicit)
+2025-04-02 14:39:51,140 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:39:51,140 [INFO] [cached since 2.041s ago] ()
+2025-04-02 14:39:51,140 [INFO] ROLLBACK
+2025-04-02 14:39:51,680 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:39:51,873 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-02 14:39:51,950 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:51] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-02 14:39:51,950 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:51] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-02 14:39:51,979 [INFO] 127.0.0.1 - - [02/Apr/2025 14:39:51] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=XUVIlGKR94tlqVcVwVPL HTTP/1.1[0m" 304 -
+2025-04-02 14:40:07,311 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:40:07,372 [INFO]  * Restarting with stat
+2025-04-02 14:40:10,524 [WARNING]  * Debugger is active!
+2025-04-02 14:40:10,535 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:41:19,481 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:41:19,537 [INFO]  * Restarting with stat
+2025-04-02 14:41:22,683 [WARNING]  * Debugger is active!
+2025-04-02 14:41:22,686 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:42:13,618 [INFO] BEGIN (implicit)
+2025-04-02 14:42:13,618 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:42:13,618 [INFO] [generated in 0.00209s] ()
+2025-04-02 14:42:13,618 [INFO] ROLLBACK
+2025-04-02 14:42:13,634 [INFO] 127.0.0.1 - - [02/Apr/2025 14:42:13] "GET / HTTP/1.1" 200 -
+2025-04-02 14:42:13,729 [INFO] 127.0.0.1 - - [02/Apr/2025 14:42:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:42:34,036 [INFO] BEGIN (implicit)
+2025-04-02 14:42:34,036 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:42:34,036 [INFO] [cached since 20.42s ago] ()
+2025-04-02 14:42:34,036 [INFO] ROLLBACK
+2025-04-02 14:42:34,067 [INFO] 127.0.0.1 - - [02/Apr/2025 14:42:34] "GET /export_csv HTTP/1.1" 200 -
+2025-04-02 14:42:40,506 [INFO] BEGIN (implicit)
+2025-04-02 14:42:40,506 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:42:40,506 [INFO] [cached since 26.89s ago] ()
+2025-04-02 14:42:40,518 [INFO] ROLLBACK
+2025-04-02 14:42:40,518 [INFO] 127.0.0.1 - - [02/Apr/2025 14:42:40] "GET /export_csv HTTP/1.1" 200 -
+2025-04-02 14:42:41,610 [INFO] 127.0.0.1 - - [02/Apr/2025 14:42:41] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-04-02 14:43:14,416 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-02 14:43:14,416 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-02 14:43:14,428 [INFO]  * Restarting with stat
+2025-04-02 14:43:16,867 [WARNING]  * Debugger is active!
+2025-04-02 14:43:16,867 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:43:24,365 [INFO] BEGIN (implicit)
+2025-04-02 14:43:24,365 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:43:24,365 [INFO] [generated in 0.00267s] ()
+2025-04-02 14:43:24,365 [INFO] ROLLBACK
+2025-04-02 14:43:24,379 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:24] "GET / HTTP/1.1" 200 -
+2025-04-02 14:43:24,475 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:43:28,673 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:28] "GET /add HTTP/1.1" 200 -
+2025-04-02 14:43:28,689 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:43:33,700 [INFO] BEGIN (implicit)
+2025-04-02 14:43:33,700 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-02 14:43:33,700 [INFO] [generated in 0.00227s] ('zebi', 50.0, 'zebi')
+2025-04-02 14:43:33,711 [INFO] COMMIT
+2025-04-02 14:43:33,727 [WARNING] L'entrée zebi, 50, zebi a été ajouté
+2025-04-02 14:43:33,727 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:33] "[32mPOST /add HTTP/1.1[0m" 302 -
+2025-04-02 14:43:33,727 [INFO] BEGIN (implicit)
+2025-04-02 14:43:33,743 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:43:33,743 [INFO] [cached since 9.374s ago] ()
+2025-04-02 14:43:33,743 [INFO] ROLLBACK
+2025-04-02 14:43:33,743 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:33] "GET / HTTP/1.1" 200 -
+2025-04-02 14:43:33,759 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:43:35,730 [INFO] BEGIN (implicit)
+2025-04-02 14:43:35,730 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-02 14:43:35,730 [INFO] [generated in 0.00217s] (8,)
+2025-04-02 14:43:35,730 [INFO] ROLLBACK
+2025-04-02 14:43:35,761 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:35] "GET /edit/8 HTTP/1.1" 200 -
+2025-04-02 14:43:35,781 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:35] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-02 14:43:38,961 [INFO] BEGIN (implicit)
+2025-04-02 14:43:38,961 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-02 14:43:38,961 [INFO] [cached since 3.222s ago] (8,)
+2025-04-02 14:43:38,961 [INFO] ROLLBACK
+2025-04-02 14:43:38,961 [INFO] BEGIN (implicit)
+2025-04-02 14:43:38,961 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-02 14:43:38,961 [INFO] [generated in 0.00147s] ('testaaa', 50.0, 'test', 8)
+2025-04-02 14:43:38,961 [INFO] COMMIT
+2025-04-02 14:43:39,041 [WARNING] L'entrée testaaa, 50.00, test a été modifié
+2025-04-02 14:43:39,057 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:39] "[32mPOST /edit/8 HTTP/1.1[0m" 302 -
+2025-04-02 14:43:39,057 [INFO] BEGIN (implicit)
+2025-04-02 14:43:39,057 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:43:39,057 [INFO] [cached since 14.69s ago] ()
+2025-04-02 14:43:39,057 [INFO] ROLLBACK
+2025-04-02 14:43:39,073 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:39] "GET / HTTP/1.1" 200 -
+2025-04-02 14:43:39,089 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:43:50,709 [INFO] 127.0.0.1 - - [02/Apr/2025 14:43:50] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-04-02 14:46:14,672 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:46:14,739 [INFO]  * Restarting with stat
+2025-04-02 14:46:18,282 [WARNING]  * Debugger is active!
+2025-04-02 14:46:18,282 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:46:18,851 [INFO] BEGIN (implicit)
+2025-04-02 14:46:18,851 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:18,851 [INFO] [generated in 0.00160s] ()
+2025-04-02 14:46:18,851 [INFO] ROLLBACK
+2025-04-02 14:46:18,851 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:18] "GET / HTTP/1.1" 200 -
+2025-04-02 14:46:18,899 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:28,242 [INFO] BEGIN (implicit)
+2025-04-02 14:46:28,242 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:28,242 [INFO] [cached since 9.397s ago] ()
+2025-04-02 14:46:28,242 [INFO] ROLLBACK
+2025-04-02 14:46:28,242 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:28] "POST / HTTP/1.1" 200 -
+2025-04-02 14:46:28,258 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:34,914 [INFO] BEGIN (implicit)
+2025-04-02 14:46:34,914 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-02 14:46:34,914 [INFO] [generated in 0.00323s] (9,)
+2025-04-02 14:46:34,927 [INFO] COMMIT
+2025-04-02 14:46:35,006 [WARNING] L'entrée 9 a été supprimé
+2025-04-02 14:46:35,006 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:35] "[32mGET /delete/9 HTTP/1.1[0m" 302 -
+2025-04-02 14:46:35,014 [INFO] BEGIN (implicit)
+2025-04-02 14:46:35,014 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:35,014 [INFO] [cached since 16.17s ago] ()
+2025-04-02 14:46:35,022 [INFO] ROLLBACK
+2025-04-02 14:46:35,022 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:35] "GET / HTTP/1.1" 200 -
+2025-04-02 14:46:35,040 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:35] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-02 14:46:36,798 [INFO] BEGIN (implicit)
+2025-04-02 14:46:36,798 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-02 14:46:36,798 [INFO] [cached since 1.887s ago] (6,)
+2025-04-02 14:46:36,798 [INFO] COMMIT
+2025-04-02 14:46:36,830 [WARNING] L'entrée 6 a été supprimé
+2025-04-02 14:46:36,830 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:36] "[32mGET /delete/6 HTTP/1.1[0m" 302 -
+2025-04-02 14:46:36,836 [INFO] BEGIN (implicit)
+2025-04-02 14:46:36,836 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:36,836 [INFO] [cached since 17.99s ago] ()
+2025-04-02 14:46:36,836 [INFO] ROLLBACK
+2025-04-02 14:46:36,846 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:36] "GET / HTTP/1.1" 200 -
+2025-04-02 14:46:36,846 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:39,099 [INFO] BEGIN (implicit)
+2025-04-02 14:46:39,099 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-02 14:46:39,099 [INFO] [cached since 4.192s ago] (5,)
+2025-04-02 14:46:39,115 [INFO] COMMIT
+2025-04-02 14:46:39,131 [WARNING] L'entrée 5 a été supprimé
+2025-04-02 14:46:39,131 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:39] "[32mGET /delete/5 HTTP/1.1[0m" 302 -
+2025-04-02 14:46:39,131 [INFO] BEGIN (implicit)
+2025-04-02 14:46:39,131 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:39,131 [INFO] [cached since 20.29s ago] ()
+2025-04-02 14:46:39,131 [INFO] ROLLBACK
+2025-04-02 14:46:39,131 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:39] "GET / HTTP/1.1" 200 -
+2025-04-02 14:46:39,147 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:42,129 [INFO] BEGIN (implicit)
+2025-04-02 14:46:42,129 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:42,145 [INFO] [cached since 23.3s ago] ()
+2025-04-02 14:46:42,145 [INFO] ROLLBACK
+2025-04-02 14:46:42,224 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:42] "POST / HTTP/1.1" 200 -
+2025-04-02 14:46:42,256 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:55,035 [INFO] BEGIN (implicit)
+2025-04-02 14:46:55,036 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:55,036 [INFO] [cached since 36.18s ago] ()
+2025-04-02 14:46:55,038 [INFO] ROLLBACK
+2025-04-02 14:46:55,038 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:55] "POST / HTTP/1.1" 200 -
+2025-04-02 14:46:55,061 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:46:58,706 [INFO] BEGIN (implicit)
+2025-04-02 14:46:58,706 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:46:58,721 [INFO] [cached since 39.87s ago] ()
+2025-04-02 14:46:58,721 [INFO] ROLLBACK
+2025-04-02 14:46:58,721 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:58] "POST / HTTP/1.1" 200 -
+2025-04-02 14:46:58,737 [INFO] 127.0.0.1 - - [02/Apr/2025 14:46:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:50:12,093 [INFO] BEGIN (implicit)
+2025-04-02 14:50:12,093 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:50:12,093 [INFO] [cached since 233.3s ago] ()
+2025-04-02 14:50:12,093 [INFO] ROLLBACK
+2025-04-02 14:50:12,109 [INFO] 127.0.0.1 - - [02/Apr/2025 14:50:12] "POST / HTTP/1.1" 200 -
+2025-04-02 14:50:12,130 [INFO] 127.0.0.1 - - [02/Apr/2025 14:50:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:51:10,056 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-02 14:51:10,107 [INFO]  * Restarting with stat
+2025-04-02 14:51:13,202 [WARNING]  * Debugger is active!
+2025-04-02 14:51:13,209 [INFO]  * Debugger PIN: 467-516-806
+2025-04-02 14:51:15,062 [INFO] BEGIN (implicit)
+2025-04-02 14:51:15,078 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:51:15,078 [INFO] [generated in 0.00196s] ()
+2025-04-02 14:51:15,078 [INFO] ROLLBACK
+2025-04-02 14:51:15,095 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:15] "POST / HTTP/1.1" 200 -
+2025-04-02 14:51:15,141 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-02 14:51:18,630 [INFO] BEGIN (implicit)
+2025-04-02 14:51:18,630 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-02 14:51:18,630 [INFO] [cached since 3.563s ago] ()
+2025-04-02 14:51:18,630 [INFO] ROLLBACK
+2025-04-02 14:51:18,647 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:18] "POST / HTTP/1.1" 200 -
+2025-04-02 14:51:18,662 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

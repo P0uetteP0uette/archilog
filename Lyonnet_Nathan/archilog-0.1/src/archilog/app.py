@@ -1,6 +1,6 @@
 import sys
 from archilog import create_app
-from archilog.cli import cli
+from archilog.views.cli import cli
 
 if __name__ == '__main__':
     # Si on est dans un contexte CLI, on lance les commandes
