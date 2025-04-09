@@ -539,3 +539,156 @@ FROM entries
 2025-04-02 14:51:18,630 [INFO] ROLLBACK
 2025-04-02 14:51:18,647 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:18] "POST / HTTP/1.1" 200 -
 2025-04-02 14:51:18,662 [INFO] 127.0.0.1 - - [02/Apr/2025 14:51:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:15:51,995 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 13:15:51,995 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-09 13:15:52,026 [INFO]  * Restarting with stat
+2025-04-09 13:15:54,427 [WARNING]  * Debugger is active!
+2025-04-09 13:15:54,443 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 13:16:10,027 [INFO] BEGIN (implicit)
+2025-04-09 13:16:10,027 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:16:10,027 [INFO] [generated in 0.00195s] ()
+2025-04-09 13:16:10,033 [INFO] ROLLBACK
+2025-04-09 13:16:10,084 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:10] "GET / HTTP/1.1" 200 -
+2025-04-09 13:16:10,150 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:10] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 13:16:10,150 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 13:16:10,184 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 13:16:17,210 [INFO] BEGIN (implicit)
+2025-04-09 13:16:17,210 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:16:17,210 [INFO] [generated in 0.00462s] (8,)
+2025-04-09 13:16:17,226 [INFO] ROLLBACK
+2025-04-09 13:16:17,274 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:17] "GET /edit/8 HTTP/1.1" 200 -
+2025-04-09 13:16:17,294 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:17] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 13:16:19,767 [INFO] BEGIN (implicit)
+2025-04-09 13:16:19,769 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:16:19,771 [INFO] [cached since 2.556s ago] (8,)
+2025-04-09 13:16:19,771 [INFO] ROLLBACK
+2025-04-09 13:16:19,810 [INFO] BEGIN (implicit)
+2025-04-09 13:16:19,810 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-09 13:16:19,810 [INFO] [generated in 0.00257s] ('testaaaaaaaaaaa', 50.0, 'test', 8)
+2025-04-09 13:16:19,825 [INFO] COMMIT
+2025-04-09 13:16:19,857 [WARNING] L'entrée testaaaaaaaaaaa, 50.00, test a été modifié
+2025-04-09 13:16:19,857 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:19] "[32mPOST /edit/8 HTTP/1.1[0m" 302 -
+2025-04-09 13:16:19,857 [INFO] BEGIN (implicit)
+2025-04-09 13:16:19,857 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:16:19,857 [INFO] [cached since 9.839s ago] ()
+2025-04-09 13:16:19,857 [INFO] ROLLBACK
+2025-04-09 13:16:19,873 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:19] "GET / HTTP/1.1" 200 -
+2025-04-09 13:16:19,889 [INFO] 127.0.0.1 - - [09/Apr/2025 13:16:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:17:27,731 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 13:17:27,731 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-09 13:17:27,747 [INFO]  * Restarting with stat
+2025-04-09 13:17:30,698 [WARNING]  * Debugger is active!
+2025-04-09 13:17:30,706 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 13:17:31,161 [INFO] BEGIN (implicit)
+2025-04-09 13:17:31,161 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:17:31,161 [INFO] [generated in 0.00191s] ()
+2025-04-09 13:17:31,165 [INFO] ROLLBACK
+2025-04-09 13:17:31,175 [INFO] 127.0.0.1 - - [09/Apr/2025 13:17:31] "GET / HTTP/1.1" 200 -
+2025-04-09 13:17:31,202 [INFO] 127.0.0.1 - - [09/Apr/2025 13:17:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:07,879 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 13:35:07,944 [INFO]  * Restarting with stat
+2025-04-09 13:35:18,561 [INFO]  * Restarting with stat
+2025-04-09 13:35:32,901 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 13:35:32,901 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-09 13:35:32,917 [INFO]  * Restarting with stat
+2025-04-09 13:35:38,860 [WARNING]  * Debugger is active!
+2025-04-09 13:35:38,874 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 13:35:39,714 [INFO] BEGIN (implicit)
+2025-04-09 13:35:39,714 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:35:39,714 [INFO] [generated in 0.00147s] ()
+2025-04-09 13:35:39,714 [INFO] ROLLBACK
+2025-04-09 13:35:39,730 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:39] "GET / HTTP/1.1" 200 -
+2025-04-09 13:35:39,762 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:42,648 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:42] "GET /add HTTP/1.1" 200 -
+2025-04-09 13:35:42,664 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:42] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 13:35:46,805 [INFO] BEGIN (implicit)
+2025-04-09 13:35:46,805 [INFO] INSERT INTO entries (name, amount, category) VALUES (?, ?, ?)
+2025-04-09 13:35:46,805 [INFO] [generated in 0.00402s] ('zebi', 50.0, 'lol')
+2025-04-09 13:35:46,821 [INFO] COMMIT
+2025-04-09 13:35:46,852 [WARNING] L'entrée zebi, 50, lol a été ajouté
+2025-04-09 13:35:46,852 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:46] "[32mPOST /add HTTP/1.1[0m" 302 -
+2025-04-09 13:35:46,860 [INFO] BEGIN (implicit)
+2025-04-09 13:35:46,860 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:35:46,870 [INFO] [cached since 7.149s ago] ()
+2025-04-09 13:35:47,364 [INFO] ROLLBACK
+2025-04-09 13:35:47,375 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:47] "GET / HTTP/1.1" 200 -
+2025-04-09 13:35:47,379 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:48,803 [INFO] BEGIN (implicit)
+2025-04-09 13:35:48,803 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:35:48,803 [INFO] [generated in 0.00402s] (10,)
+2025-04-09 13:35:48,809 [INFO] ROLLBACK
+2025-04-09 13:35:48,826 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:48] "GET /edit/10 HTTP/1.1" 200 -
+2025-04-09 13:35:48,835 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:51,085 [INFO] BEGIN (implicit)
+2025-04-09 13:35:51,089 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:35:51,089 [INFO] [cached since 2.289s ago] (10,)
+2025-04-09 13:35:51,089 [INFO] ROLLBACK
+2025-04-09 13:35:51,089 [INFO] BEGIN (implicit)
+2025-04-09 13:35:51,089 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-09 13:35:51,311 [INFO] [generated in 0.21197s] ('zebi', 50.0, 'lol', 10)
+2025-04-09 13:35:51,311 [INFO] COMMIT
+2025-04-09 13:35:51,318 [WARNING] L'entrée zebi, 50.00, lol a été modifié
+2025-04-09 13:35:51,320 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:51] "[32mPOST /edit/10 HTTP/1.1[0m" 302 -
+2025-04-09 13:35:51,324 [INFO] BEGIN (implicit)
+2025-04-09 13:35:51,327 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:35:51,327 [INFO] [cached since 11.61s ago] ()
+2025-04-09 13:35:51,327 [INFO] ROLLBACK
+2025-04-09 13:35:51,327 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:51] "GET / HTTP/1.1" 200 -
+2025-04-09 13:35:51,342 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:53,281 [INFO] BEGIN (implicit)
+2025-04-09 13:35:53,291 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:35:53,291 [INFO] [cached since 4.494s ago] (10,)
+2025-04-09 13:35:53,291 [INFO] ROLLBACK
+2025-04-09 13:35:53,307 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:53] "GET /edit/10 HTTP/1.1" 200 -
+2025-04-09 13:35:53,339 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:56,424 [INFO] BEGIN (implicit)
+2025-04-09 13:35:56,426 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries 
+WHERE entries.id = ?
+2025-04-09 13:35:56,427 [INFO] [cached since 7.625s ago] (10,)
+2025-04-09 13:35:56,427 [INFO] ROLLBACK
+2025-04-09 13:35:56,427 [INFO] BEGIN (implicit)
+2025-04-09 13:35:56,427 [INFO] UPDATE entries SET name=?, amount=?, category=? WHERE entries.id = ?
+2025-04-09 13:35:56,427 [INFO] [cached since 5.338s ago] ('zebitest', 50.0, 'lol', 10)
+2025-04-09 13:35:56,441 [INFO] COMMIT
+2025-04-09 13:35:56,456 [WARNING] L'entrée zebitest, 50.00, lol a été modifié
+2025-04-09 13:35:56,456 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:56] "[32mPOST /edit/10 HTTP/1.1[0m" 302 -
+2025-04-09 13:35:56,474 [INFO] BEGIN (implicit)
+2025-04-09 13:35:56,474 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:35:56,474 [INFO] [cached since 16.76s ago] ()
+2025-04-09 13:35:56,474 [INFO] ROLLBACK
+2025-04-09 13:35:56,474 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:56] "GET / HTTP/1.1" 200 -
+2025-04-09 13:35:56,504 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 13:35:59,611 [INFO] BEGIN (implicit)
+2025-04-09 13:35:59,611 [INFO] DELETE FROM entries WHERE entries.id = ?
+2025-04-09 13:35:59,611 [INFO] [generated in 0.00447s] (9,)
+2025-04-09 13:35:59,627 [INFO] COMMIT
+2025-04-09 13:35:59,659 [WARNING] L'entrée 9 a été supprimé
+2025-04-09 13:35:59,659 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:59] "[32mGET /delete/9 HTTP/1.1[0m" 302 -
+2025-04-09 13:35:59,669 [INFO] BEGIN (implicit)
+2025-04-09 13:35:59,669 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 13:35:59,669 [INFO] [cached since 19.95s ago] ()
+2025-04-09 13:35:59,674 [INFO] ROLLBACK
+2025-04-09 13:35:59,674 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:59] "GET / HTTP/1.1" 200 -
+2025-04-09 13:35:59,696 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:59] "GET /static/styles.css HTTP/1.1" 200 -

@@ -2,7 +2,9 @@ import logging
 from flask import render_template, request, redirect, url_for, Response, Blueprint
 import archilog.models as models
 import archilog.services as services
-from archilog.forms import EditEntryForm, AddEntryForm, ImportCSVForm
+from flask_wtf import FlaskForm
+from wtforms import StringField, DecimalField, FileField, SubmitField
+from wtforms.validators import DataRequired
 
 web_ui = Blueprint("web", __name__)
 
@@ -12,6 +14,13 @@ def home():
     entries = models.get_all_entries()
     form = ImportCSVForm()
     return render_template('home.html', entries=entries, form=form)
+
+
+
+class AddEntryForm(FlaskForm):
+    name = StringField('Nom', validators=[DataRequired()])
+    amount = DecimalField('Montant', validators=[DataRequired()])
+    category = StringField('Catégorie', validators=[DataRequired()])
 
 @web_ui.route('/add', methods=['GET', 'POST'])
 def add_entry():
@@ -26,8 +35,15 @@ def add_entry():
         return redirect(url_for('web.home'))
     return render_template('add_entry.html', form=form)  # Passer le formulaire au template
 
+
 # WTForms : on change le name amount category, -> comme des arguments de l'objet form
 # ca va nous permettre d'aller dans nos html et changer les formulaires existants et pouvoir leur rajouter des conditions. faire des trucs dynamique quoi
+
+
+class EditEntryForm(FlaskForm):
+    name = StringField('Nom', validators=[DataRequired()])
+    amount = DecimalField('Montant', validators=[DataRequired()])
+    category = StringField('Catégorie', validators=[DataRequired()])
 
 @web_ui.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit_entry(id):
@@ -48,6 +64,12 @@ def delete_entry(id):
     models.delete_entry(id)
     logging.warning(f"L'entrée {id} a été supprimé")
     return redirect(url_for('web.home'))
+
+
+
+class ImportCSVForm(FlaskForm):
+    file = FileField("Importer un fichier CSV", validators=[DataRequired()])
+    submit = SubmitField("Importer")
 
 @web_ui.route('/import_csv', methods=['GET', 'POST'])
 def import_csv():
