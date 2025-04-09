@@ -692,3 +692,640 @@ FROM entries
 2025-04-09 13:35:59,674 [INFO] ROLLBACK
 2025-04-09 13:35:59,674 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:59] "GET / HTTP/1.1" 200 -
 2025-04-09 13:35:59,696 [INFO] 127.0.0.1 - - [09/Apr/2025 13:35:59] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:04:27,542 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 14:04:27,542 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-09 14:04:27,559 [INFO]  * Restarting with stat
+2025-04-09 14:04:30,113 [WARNING]  * Debugger is active!
+2025-04-09 14:04:30,126 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:04:35,790 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:35] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:04:40,971 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:40] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:04:46,288 [INFO] BEGIN (implicit)
+2025-04-09 14:04:46,288 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:04:46,288 [INFO] [generated in 0.00209s] ()
+2025-04-09 14:04:46,288 [INFO] ROLLBACK
+2025-04-09 14:04:46,303 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:46] "GET / HTTP/1.1" 200 -
+2025-04-09 14:04:46,367 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:04:46,367 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:04:46,382 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:04:50,401 [INFO] BEGIN (implicit)
+2025-04-09 14:04:50,401 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:04:50,401 [INFO] [cached since 4.117s ago] ()
+2025-04-09 14:04:50,401 [INFO] ROLLBACK
+2025-04-09 14:04:50,401 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:50] "GET / HTTP/1.1" 200 -
+2025-04-09 14:04:50,419 [INFO] 127.0.0.1 - - [09/Apr/2025 14:04:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:05:23,055 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:05:23,093 [INFO]  * Restarting with stat
+2025-04-09 14:05:26,170 [WARNING]  * Debugger is active!
+2025-04-09 14:05:26,170 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:05:43,510 [INFO] BEGIN (implicit)
+2025-04-09 14:05:43,510 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:05:43,510 [INFO] [generated in 0.00155s] ()
+2025-04-09 14:05:43,510 [INFO] ROLLBACK
+2025-04-09 14:05:43,510 [INFO] 127.0.0.1 - - [09/Apr/2025 14:05:43] "GET / HTTP/1.1" 200 -
+2025-04-09 14:05:43,542 [INFO] 127.0.0.1 - - [09/Apr/2025 14:05:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:06:11,033 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:11] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:06:15,241 [INFO] BEGIN (implicit)
+2025-04-09 14:06:15,241 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:06:15,241 [INFO] [cached since 31.73s ago] ()
+2025-04-09 14:06:15,241 [INFO] ROLLBACK
+2025-04-09 14:06:15,241 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:15] "GET / HTTP/1.1" 200 -
+2025-04-09 14:06:15,271 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:15] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:06:15,271 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:06:15,271 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:06:21,792 [INFO] BEGIN (implicit)
+2025-04-09 14:06:21,792 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:06:21,792 [INFO] [cached since 38.29s ago] ()
+2025-04-09 14:06:21,792 [INFO] ROLLBACK
+2025-04-09 14:06:21,824 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:21] "GET /export_csv HTTP/1.1" 200 -
+2025-04-09 14:06:32,732 [INFO] BEGIN (implicit)
+2025-04-09 14:06:32,732 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:06:32,732 [INFO] [cached since 49.22s ago] ()
+2025-04-09 14:06:32,734 [INFO] ROLLBACK
+2025-04-09 14:06:32,734 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:32] "GET / HTTP/1.1" 200 -
+2025-04-09 14:06:32,750 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:06:36,408 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:06:36,408 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:36] "[33mGET /admin HTTP/1.1[0m" 404 -
+2025-04-09 14:06:37,904 [INFO] BEGIN (implicit)
+2025-04-09 14:06:37,904 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:06:37,904 [INFO] [cached since 54.4s ago] ()
+2025-04-09 14:06:37,904 [INFO] ROLLBACK
+2025-04-09 14:06:37,904 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:37] "GET / HTTP/1.1" 200 -
+2025-04-09 14:06:37,920 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:06:59,875 [INFO] 127.0.0.1 - - [09/Apr/2025 14:06:59] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:07:03,946 [INFO] BEGIN (implicit)
+2025-04-09 14:07:03,946 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:07:03,946 [INFO] [cached since 80.44s ago] ()
+2025-04-09 14:07:03,946 [INFO] ROLLBACK
+2025-04-09 14:07:03,946 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:03] "GET / HTTP/1.1" 200 -
+2025-04-09 14:07:03,968 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:03] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:07:03,968 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:07:03,978 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:07:19,707 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:19] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-04-09 14:07:23,283 [INFO] BEGIN (implicit)
+2025-04-09 14:07:23,283 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:07:23,283 [INFO] [cached since 99.78s ago] ()
+2025-04-09 14:07:23,283 [INFO] ROLLBACK
+2025-04-09 14:07:23,283 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:23] "GET / HTTP/1.1" 200 -
+2025-04-09 14:07:34,336 [INFO] 127.0.0.1 - - [09/Apr/2025 14:07:34] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2025-04-09 14:09:02,273 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:09:02,323 [INFO]  * Restarting with stat
+2025-04-09 14:09:06,438 [WARNING]  * Debugger is active!
+2025-04-09 14:09:06,454 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:10:47,617 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:10:47,655 [INFO]  * Restarting with stat
+2025-04-09 14:10:51,246 [WARNING]  * Debugger is active!
+2025-04-09 14:10:51,255 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:12:00,648 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:12:00,702 [INFO]  * Restarting with stat
+2025-04-09 14:12:03,665 [WARNING]  * Debugger is active!
+2025-04-09 14:12:03,665 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:12:13,757 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:12:13,796 [INFO]  * Restarting with stat
+2025-04-09 14:12:16,383 [WARNING]  * Debugger is active!
+2025-04-09 14:12:16,383 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:13:15,788 [INFO] BEGIN (implicit)
+2025-04-09 14:13:15,788 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:13:15,788 [INFO] [generated in 0.00159s] ()
+2025-04-09 14:13:15,788 [INFO] ROLLBACK
+2025-04-09 14:13:15,819 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:15] "GET / HTTP/1.1" 200 -
+2025-04-09 14:13:15,851 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:13:23,992 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:23] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:13:27,810 [INFO] BEGIN (implicit)
+2025-04-09 14:13:27,814 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:13:27,814 [INFO] [cached since 12.02s ago] ()
+2025-04-09 14:13:27,842 [INFO] ROLLBACK
+2025-04-09 14:13:27,857 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:27] "GET / HTTP/1.1" 200 -
+2025-04-09 14:13:27,873 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:27] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:13:27,873 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:13:27,873 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:13:38,388 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:38] "[35m[1mPOST /import_csv HTTP/1.1[0m" 500 -
+2025-04-09 14:13:38,429 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:38] "GET /import_csv?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:13:38,468 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:38] "GET /import_csv?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:13:38,484 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:38] "GET /import_csv?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:13:38,484 [INFO] 127.0.0.1 - - [09/Apr/2025 14:13:38] "GET /import_csv?__debugger__=yes&cmd=resource&f=console.png&s=FUgj245cUJu2d7gOCyIN HTTP/1.1" 200 -
+2025-04-09 14:19:26,964 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:19:27,012 [INFO]  * Restarting with stat
+2025-04-09 14:19:30,461 [WARNING]  * Debugger is active!
+2025-04-09 14:19:30,461 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:19:41,615 [INFO] BEGIN (implicit)
+2025-04-09 14:19:41,631 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:19:41,631 [INFO] [generated in 0.00663s] ()
+2025-04-09 14:19:41,631 [INFO] ROLLBACK
+2025-04-09 14:19:41,678 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:41] "GET / HTTP/1.1" 200 -
+2025-04-09 14:19:41,747 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:41] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:19:41,751 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:19:41,757 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:19:47,230 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:47] "[35m[1mPOST /import_csv HTTP/1.1[0m" 500 -
+2025-04-09 14:19:47,246 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:47] "[36mGET /import_csv?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:19:47,262 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:47] "[36mGET /import_csv?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:19:47,283 [INFO] 127.0.0.1 - - [09/Apr/2025 14:19:47] "GET /import_csv?__debugger__=yes&cmd=resource&f=console.png&s=Z5DtJPimLAyLFPDhc18L HTTP/1.1" 200 -
+2025-04-09 14:23:46,443 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:46] "[35m[1mPOST /import_csv HTTP/1.1[0m" 500 -
+2025-04-09 14:23:46,462 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:46] "GET /import_csv?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:23:46,491 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:46] "[36mGET /import_csv?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:23:46,507 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:46] "[36mGET /import_csv?__debugger__=yes&cmd=resource&f=console.png&s=Z5DtJPimLAyLFPDhc18L HTTP/1.1[0m" 304 -
+2025-04-09 14:23:49,235 [INFO] BEGIN (implicit)
+2025-04-09 14:23:49,235 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:23:49,235 [INFO] [cached since 247.6s ago] ()
+2025-04-09 14:23:49,251 [INFO] ROLLBACK
+2025-04-09 14:23:49,268 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:49] "GET / HTTP/1.1" 200 -
+2025-04-09 14:23:49,282 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:23:55,991 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:55] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:23:59,436 [INFO] BEGIN (implicit)
+2025-04-09 14:23:59,436 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:23:59,436 [INFO] [cached since 257.8s ago] ()
+2025-04-09 14:23:59,436 [INFO] ROLLBACK
+2025-04-09 14:23:59,436 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:59] "GET / HTTP/1.1" 200 -
+2025-04-09 14:23:59,450 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:59] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:23:59,466 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:23:59,466 [INFO] 127.0.0.1 - - [09/Apr/2025 14:23:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:24:02,049 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:02] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:24:02,085 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:02] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:24:02,113 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:02] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:24:02,113 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:02] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=Z5DtJPimLAyLFPDhc18L HTTP/1.1" 200 -
+2025-04-09 14:24:02,113 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:02] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:24:12,326 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:12] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:24:17,325 [INFO] BEGIN (implicit)
+2025-04-09 14:24:17,325 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:24:17,325 [INFO] [cached since 275.7s ago] ()
+2025-04-09 14:24:17,325 [INFO] ROLLBACK
+2025-04-09 14:24:17,339 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:17] "GET / HTTP/1.1" 200 -
+2025-04-09 14:24:17,355 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:17] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:24:17,355 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:24:17,355 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:24:18,576 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:18] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:24:18,592 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:18] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:24:18,608 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:18] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:24:18,624 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:18] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=Z5DtJPimLAyLFPDhc18L HTTP/1.1" 200 -
+2025-04-09 14:24:18,624 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:18] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:24:34,084 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:34] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:24:38,673 [INFO] BEGIN (implicit)
+2025-04-09 14:24:38,673 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:24:38,673 [INFO] [cached since 297s ago] ()
+2025-04-09 14:24:38,685 [INFO] ROLLBACK
+2025-04-09 14:24:38,707 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:38] "GET / HTTP/1.1" 200 -
+2025-04-09 14:24:38,717 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:38] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:24:38,733 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:24:38,733 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:24:40,217 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:40] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:24:40,232 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:40] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:24:40,248 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:40] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:24:40,264 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:40] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:24:40,264 [INFO] 127.0.0.1 - - [09/Apr/2025 14:24:40] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=Z5DtJPimLAyLFPDhc18L HTTP/1.1" 200 -
+2025-04-09 14:33:20,618 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:33:20,703 [INFO]  * Restarting with stat
+2025-04-09 14:33:23,754 [WARNING]  * Debugger is active!
+2025-04-09 14:33:23,754 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:33:54,731 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:33:54,781 [INFO]  * Restarting with stat
+2025-04-09 14:33:58,515 [WARNING]  * Debugger is active!
+2025-04-09 14:33:58,525 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:34:46,040 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:34:46,135 [INFO]  * Restarting with stat
+2025-04-09 14:34:49,293 [WARNING]  * Debugger is active!
+2025-04-09 14:34:49,301 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:37:08,266 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:37:08,353 [INFO]  * Restarting with stat
+2025-04-09 14:37:11,397 [WARNING]  * Debugger is active!
+2025-04-09 14:37:11,412 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:37:13,532 [INFO] BEGIN (implicit)
+2025-04-09 14:37:13,532 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:37:13,542 [INFO] [generated in 0.00190s] ()
+2025-04-09 14:37:13,542 [INFO] ROLLBACK
+2025-04-09 14:37:13,554 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:13] "GET / HTTP/1.1" 200 -
+2025-04-09 14:37:13,589 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:37:17,547 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:17] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:37:21,045 [INFO] BEGIN (implicit)
+2025-04-09 14:37:21,045 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:37:21,045 [INFO] [cached since 7.51s ago] ()
+2025-04-09 14:37:21,045 [INFO] ROLLBACK
+2025-04-09 14:37:21,045 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:21] "GET / HTTP/1.1" 200 -
+2025-04-09 14:37:21,065 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:21] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:37:21,065 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:37:21,080 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:37:23,583 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:23] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:37:23,598 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:23] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:37:23,614 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:23] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:37:23,630 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:23] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:37:23,630 [INFO] 127.0.0.1 - - [09/Apr/2025 14:37:23] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=1gDEGpUpbzyJl7PZG96y HTTP/1.1" 200 -
+2025-04-09 14:38:55,427 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:38:55,482 [INFO]  * Restarting with stat
+2025-04-09 14:38:58,590 [WARNING]  * Debugger is active!
+2025-04-09 14:38:58,590 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:38:59,018 [INFO] 127.0.0.1 - - [09/Apr/2025 14:38:59] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:39:11,020 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:11] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:39:18,097 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:39:18,182 [INFO]  * Restarting with stat
+2025-04-09 14:39:21,438 [WARNING]  * Debugger is active!
+2025-04-09 14:39:21,438 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:39:21,958 [INFO] BEGIN (implicit)
+2025-04-09 14:39:21,958 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:39:21,958 [INFO] [generated in 0.00168s] ()
+2025-04-09 14:39:21,958 [INFO] ROLLBACK
+2025-04-09 14:39:21,974 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:21] "GET / HTTP/1.1" 200 -
+2025-04-09 14:39:22,011 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:22] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:39:22,012 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:39:22,012 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:39:24,737 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:24] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:39:28,057 [INFO] BEGIN (implicit)
+2025-04-09 14:39:28,057 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:39:28,060 [INFO] [cached since 6.098s ago] ()
+2025-04-09 14:39:28,066 [INFO] ROLLBACK
+2025-04-09 14:39:28,066 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:28] "GET / HTTP/1.1" 200 -
+2025-04-09 14:39:28,088 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:28] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:39:28,088 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:39:28,088 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:39:30,309 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:30] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:39:30,340 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:30] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:39:30,356 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:30] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:39:30,364 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:30] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:39:30,364 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:30] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=uudZ28mpR9i21r8Slctv HTTP/1.1" 200 -
+2025-04-09 14:39:33,494 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:33] "[35m[1mGET /edit/10 HTTP/1.1[0m" 500 -
+2025-04-09 14:39:33,510 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:33] "GET /edit/10?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:39:33,510 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:33] "GET /edit/10?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:39:33,525 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:33] "GET /edit/10?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:39:33,525 [INFO] 127.0.0.1 - - [09/Apr/2025 14:39:33] "GET /edit/10?__debugger__=yes&cmd=resource&f=console.png&s=uudZ28mpR9i21r8Slctv HTTP/1.1" 200 -
+2025-04-09 14:44:07,786 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:07] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-04-09 14:44:10,674 [INFO] BEGIN (implicit)
+2025-04-09 14:44:10,690 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:44:10,690 [INFO] [cached since 288.7s ago] ()
+2025-04-09 14:44:10,690 [INFO] ROLLBACK
+2025-04-09 14:44:10,690 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:10] "GET / HTTP/1.1" 200 -
+2025-04-09 14:44:10,705 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:10] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:44:10,721 [WARNING] 404 - page not found : 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-09 14:44:10,721 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 14:44:12,750 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:12] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:44:12,775 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:12] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:44:12,798 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:12] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:44:12,814 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:12] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=uudZ28mpR9i21r8Slctv HTTP/1.1" 200 -
+2025-04-09 14:44:12,814 [INFO] 127.0.0.1 - - [09/Apr/2025 14:44:12] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:46:39,445 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:46:39,484 [INFO]  * Restarting with stat
+2025-04-09 14:46:42,490 [WARNING]  * Debugger is active!
+2025-04-09 14:46:42,505 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:46:43,280 [INFO] 127.0.0.1 - - [09/Apr/2025 14:46:43] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:46:43,327 [INFO] 127.0.0.1 - - [09/Apr/2025 14:46:43] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:46:43,327 [INFO] 127.0.0.1 - - [09/Apr/2025 14:46:43] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:46:43,344 [INFO] 127.0.0.1 - - [09/Apr/2025 14:46:43] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=R2RuuoGWXFDSk6HRZ5V2 HTTP/1.1" 200 -
+2025-04-09 14:47:13,745 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:47:13,781 [INFO]  * Restarting with stat
+2025-04-09 14:47:16,761 [WARNING]  * Debugger is active!
+2025-04-09 14:47:16,763 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:47:18,609 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:47:18,644 [INFO]  * Restarting with stat
+2025-04-09 14:47:20,896 [WARNING]  * Debugger is active!
+2025-04-09 14:47:20,896 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:47:24,575 [INFO] 127.0.0.1 - - [09/Apr/2025 14:47:24] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:47:24,598 [INFO] 127.0.0.1 - - [09/Apr/2025 14:47:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:47:26,796 [INFO] 127.0.0.1 - - [09/Apr/2025 14:47:26] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:47:26,796 [INFO] 127.0.0.1 - - [09/Apr/2025 14:47:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:47:43,709 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:47:43,759 [INFO]  * Restarting with stat
+2025-04-09 14:47:46,736 [INFO]  * Restarting with stat
+2025-04-09 14:47:49,391 [WARNING]  * Debugger is active!
+2025-04-09 14:47:49,394 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:48:06,427 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:48:06,462 [INFO]  * Restarting with stat
+2025-04-09 14:48:09,394 [WARNING]  * Debugger is active!
+2025-04-09 14:48:09,401 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:48:30,262 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:48:30,305 [INFO]  * Restarting with stat
+2025-04-09 14:48:37,286 [WARNING]  * Debugger is active!
+2025-04-09 14:48:37,297 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:48:54,665 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:48:54,705 [INFO]  * Restarting with stat
+2025-04-09 14:48:59,856 [WARNING]  * Debugger is active!
+2025-04-09 14:48:59,872 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:49:01,273 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:01] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:49:01,532 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:49:03,171 [INFO] BEGIN (implicit)
+2025-04-09 14:49:03,171 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:49:03,171 [INFO] [generated in 0.00226s] ()
+2025-04-09 14:49:03,171 [INFO] ROLLBACK
+2025-04-09 14:49:03,193 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:03] "GET / HTTP/1.1" 200 -
+2025-04-09 14:49:03,202 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:49:05,119 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:05] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:49:05,151 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:05] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:49:05,166 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:05] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:49:05,178 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:05] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=3146bvlKhsMvp3NgHOQK HTTP/1.1" 200 -
+2025-04-09 14:49:08,606 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:08] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:49:08,606 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:49:08,606 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:49:08,621 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:08] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=3146bvlKhsMvp3NgHOQK HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,397 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:49:09,403 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,403 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,413 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=3146bvlKhsMvp3NgHOQK HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,778 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:49:09,791 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,791 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:49:09,793 [INFO] 127.0.0.1 - - [09/Apr/2025 14:49:09] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=3146bvlKhsMvp3NgHOQK HTTP/1.1[0m" 304 -
+2025-04-09 14:49:38,388 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:49:38,434 [INFO]  * Restarting with stat
+2025-04-09 14:49:41,532 [WARNING]  * Debugger is active!
+2025-04-09 14:49:41,540 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:50:33,742 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:50:33,791 [INFO]  * Restarting with stat
+2025-04-09 14:50:36,761 [WARNING]  * Debugger is active!
+2025-04-09 14:50:36,761 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:50:37,252 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:37] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:37,289 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:38,093 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:38,109 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:38,584 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:38,584 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:38,817 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:38,821 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:38,994 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:38] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:39,012 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:39,183 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:39,183 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:39,358 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:39,374 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:39,548 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:39,564 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:39,916 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:39,923 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:40,228 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:40,244 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:40,521 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:40,529 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:40,735 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:40,751 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:40,943 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:40,956 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:41,179 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:41] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:50:41,195 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:41,972 [INFO] BEGIN (implicit)
+2025-04-09 14:50:41,972 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:50:41,972 [INFO] [generated in 0.00326s] ()
+2025-04-09 14:50:41,972 [INFO] ROLLBACK
+2025-04-09 14:50:42,003 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:42] "GET / HTTP/1.1" 200 -
+2025-04-09 14:50:42,021 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:43,222 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:43] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:50:43,230 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:43] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:50:43,242 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:43] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:50:43,255 [INFO] 127.0.0.1 - - [09/Apr/2025 14:50:43] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=JEZrxlEycCZv1WxVXNPA HTTP/1.1" 200 -
+2025-04-09 14:51:01,525 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:01] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:51:01,525 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:01] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:51:01,557 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:01] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:51:01,568 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:01] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=JEZrxlEycCZv1WxVXNPA HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,111 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:51:02,127 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,127 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,136 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=JEZrxlEycCZv1WxVXNPA HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,616 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:51:02,616 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,616 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:51:02,632 [INFO] 127.0.0.1 - - [09/Apr/2025 14:51:02] "[36mGET /add?__debugger__=yes&cmd=resource&f=console.png&s=JEZrxlEycCZv1WxVXNPA HTTP/1.1[0m" 304 -
+2025-04-09 14:52:06,125 [INFO]  * Detected change in 'U:\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\.venv\\Lib\\site-packages\\flask_httpauth.py', reloading
+2025-04-09 14:52:06,192 [INFO]  * Restarting with stat
+2025-04-09 14:52:09,579 [WARNING]  * Debugger is active!
+2025-04-09 14:52:09,581 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:52:10,070 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:10] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:52:10,110 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:52:19,911 [INFO] BEGIN (implicit)
+2025-04-09 14:52:19,911 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:52:19,911 [INFO] [generated in 0.00148s] ()
+2025-04-09 14:52:19,911 [INFO] ROLLBACK
+2025-04-09 14:52:19,926 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:19] "GET / HTTP/1.1" 200 -
+2025-04-09 14:52:19,942 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:52:25,744 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:25] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:52:25,760 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:25] "[36mGET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-09 14:52:25,776 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:25] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:52:25,776 [INFO] 127.0.0.1 - - [09/Apr/2025 14:52:25] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=GKdBtvMm16DXSQFUjqka HTTP/1.1" 200 -
+2025-04-09 14:52:33,715 [INFO]  * Detected change in 'U:\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\.venv\\Lib\\site-packages\\flask_httpauth.py', reloading
+2025-04-09 14:52:33,766 [INFO]  * Restarting with stat
+2025-04-09 14:52:37,165 [WARNING]  * Debugger is active!
+2025-04-09 14:52:37,165 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:53:43,702 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:53:43,756 [INFO]  * Restarting with stat
+2025-04-09 14:53:46,794 [WARNING]  * Debugger is active!
+2025-04-09 14:53:46,796 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:54:05,041 [INFO] BEGIN (implicit)
+2025-04-09 14:54:05,041 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:05,041 [INFO] [generated in 0.00231s] ()
+2025-04-09 14:54:05,041 [INFO] ROLLBACK
+2025-04-09 14:54:05,291 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-09 14:54:05,402 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:05] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:54:05,418 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:05] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 14:54:05,418 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=8760lxfTkvRzCiyGe80z HTTP/1.1" 200 -
+2025-04-09 14:54:05,433 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:05] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 14:54:25,423 [INFO] BEGIN (implicit)
+2025-04-09 14:54:25,423 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:25,423 [INFO] [cached since 20.39s ago] ()
+2025-04-09 14:54:25,431 [INFO] ROLLBACK
+2025-04-09 14:54:25,455 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:25] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:25,470 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:25] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:54:30,546 [INFO] BEGIN (implicit)
+2025-04-09 14:54:30,546 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:30,546 [INFO] [cached since 25.5s ago] ()
+2025-04-09 14:54:30,546 [INFO] ROLLBACK
+2025-04-09 14:54:30,546 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:30] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:30,562 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:31,149 [INFO] BEGIN (implicit)
+2025-04-09 14:54:31,149 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:31,149 [INFO] [cached since 26.11s ago] ()
+2025-04-09 14:54:31,149 [INFO] ROLLBACK
+2025-04-09 14:54:31,149 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:31] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:31,172 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:31,654 [INFO] BEGIN (implicit)
+2025-04-09 14:54:31,654 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:31,670 [INFO] [cached since 26.62s ago] ()
+2025-04-09 14:54:31,670 [INFO] ROLLBACK
+2025-04-09 14:54:31,670 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:31] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:31,686 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:32,387 [INFO] BEGIN (implicit)
+2025-04-09 14:54:32,387 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:32,387 [INFO] [cached since 27.35s ago] ()
+2025-04-09 14:54:32,387 [INFO] ROLLBACK
+2025-04-09 14:54:32,403 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:32] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:32,418 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:33,222 [INFO] BEGIN (implicit)
+2025-04-09 14:54:33,224 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:33,225 [INFO] [cached since 28.18s ago] ()
+2025-04-09 14:54:33,227 [INFO] ROLLBACK
+2025-04-09 14:54:33,231 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:33] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:33,243 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:44,572 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:54:44,654 [INFO]  * Restarting with stat
+2025-04-09 14:54:47,762 [WARNING]  * Debugger is active!
+2025-04-09 14:54:47,762 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:54:48,239 [INFO] BEGIN (implicit)
+2025-04-09 14:54:48,239 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:48,239 [INFO] [generated in 0.00129s] ()
+2025-04-09 14:54:48,239 [INFO] ROLLBACK
+2025-04-09 14:54:48,249 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:48] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:48,281 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:48] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:54:49,839 [INFO] BEGIN (implicit)
+2025-04-09 14:54:49,839 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:49,839 [INFO] [cached since 1.603s ago] ()
+2025-04-09 14:54:49,839 [INFO] ROLLBACK
+2025-04-09 14:54:49,839 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:49] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:49,854 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:50,570 [INFO] BEGIN (implicit)
+2025-04-09 14:54:50,570 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:54:50,570 [INFO] [cached since 2.334s ago] ()
+2025-04-09 14:54:50,570 [INFO] ROLLBACK
+2025-04-09 14:54:50,570 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:50] "GET / HTTP/1.1" 200 -
+2025-04-09 14:54:50,585 [INFO] 127.0.0.1 - - [09/Apr/2025 14:54:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:54:59,655 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:54:59,722 [INFO]  * Restarting with stat
+2025-04-09 14:55:02,939 [WARNING]  * Debugger is active!
+2025-04-09 14:55:02,955 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:55:03,420 [INFO] BEGIN (implicit)
+2025-04-09 14:55:03,420 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:03,428 [INFO] [generated in 0.00410s] ()
+2025-04-09 14:55:03,428 [INFO] ROLLBACK
+2025-04-09 14:55:03,439 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:03] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:03,459 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:07,687 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:55:07,776 [INFO]  * Restarting with stat
+2025-04-09 14:55:10,123 [WARNING]  * Debugger is active!
+2025-04-09 14:55:10,123 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:55:46,288 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:55:46,343 [INFO]  * Restarting with stat
+2025-04-09 14:55:49,424 [WARNING]  * Debugger is active!
+2025-04-09 14:55:49,438 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:55:54,091 [INFO] BEGIN (implicit)
+2025-04-09 14:55:54,091 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:54,091 [INFO] [generated in 0.00200s] ()
+2025-04-09 14:55:54,091 [INFO] ROLLBACK
+2025-04-09 14:55:54,118 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:54] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:54,205 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:55,038 [INFO] BEGIN (implicit)
+2025-04-09 14:55:55,038 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:55,038 [INFO] [cached since 0.9539s ago] ()
+2025-04-09 14:55:55,038 [INFO] ROLLBACK
+2025-04-09 14:55:55,053 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:55] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:55,053 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:55,921 [INFO] BEGIN (implicit)
+2025-04-09 14:55:55,921 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:55,921 [INFO] [cached since 1.834s ago] ()
+2025-04-09 14:55:55,921 [INFO] ROLLBACK
+2025-04-09 14:55:55,921 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:55] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:55,937 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:56,120 [INFO] BEGIN (implicit)
+2025-04-09 14:55:56,129 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:56,131 [INFO] [cached since 2.036s ago] ()
+2025-04-09 14:55:56,133 [INFO] ROLLBACK
+2025-04-09 14:55:56,138 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:56,138 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:56,321 [INFO] BEGIN (implicit)
+2025-04-09 14:55:56,321 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:56,321 [INFO] [cached since 2.239s ago] ()
+2025-04-09 14:55:56,339 [INFO] ROLLBACK
+2025-04-09 14:55:56,339 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:56,348 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:55:56,522 [INFO] BEGIN (implicit)
+2025-04-09 14:55:56,522 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:55:56,537 [INFO] [cached since 2.442s ago] ()
+2025-04-09 14:55:56,537 [INFO] ROLLBACK
+2025-04-09 14:55:56,537 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "GET / HTTP/1.1" 200 -
+2025-04-09 14:55:56,555 [INFO] 127.0.0.1 - - [09/Apr/2025 14:55:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:56:12,971 [INFO] BEGIN (implicit)
+2025-04-09 14:56:12,971 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:56:12,987 [INFO] [cached since 18.89s ago] ()
+2025-04-09 14:56:12,989 [INFO] ROLLBACK
+2025-04-09 14:56:13,022 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:13] "GET / HTTP/1.1" 200 -
+2025-04-09 14:56:13,039 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:56:13,536 [INFO] BEGIN (implicit)
+2025-04-09 14:56:13,536 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:56:13,536 [INFO] [cached since 19.45s ago] ()
+2025-04-09 14:56:13,551 [INFO] ROLLBACK
+2025-04-09 14:56:13,551 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:13] "GET / HTTP/1.1" 200 -
+2025-04-09 14:56:13,570 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:56:32,832 [INFO] BEGIN (implicit)
+2025-04-09 14:56:32,832 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:56:32,832 [INFO] [cached since 38.74s ago] ()
+2025-04-09 14:56:32,841 [INFO] ROLLBACK
+2025-04-09 14:56:32,863 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:32] "GET / HTTP/1.1" 200 -
+2025-04-09 14:56:32,892 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:56:53,670 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:56:53,745 [INFO]  * Restarting with stat
+2025-04-09 14:56:57,198 [WARNING]  * Debugger is active!
+2025-04-09 14:56:57,204 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:56:57,938 [INFO] BEGIN (implicit)
+2025-04-09 14:56:57,938 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:56:57,938 [INFO] [generated in 0.00143s] ()
+2025-04-09 14:56:57,938 [INFO] ROLLBACK
+2025-04-09 14:56:57,955 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:57] "GET / HTTP/1.1" 200 -
+2025-04-09 14:56:57,991 [INFO] 127.0.0.1 - - [09/Apr/2025 14:56:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:57:10,105 [INFO] BEGIN (implicit)
+2025-04-09 14:57:10,105 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:57:10,105 [INFO] [cached since 12.17s ago] ()
+2025-04-09 14:57:10,121 [INFO] ROLLBACK
+2025-04-09 14:57:10,139 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:10] "GET / HTTP/1.1" 200 -
+2025-04-09 14:57:10,172 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:57:12,698 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:12] "[35m[1mGET /add HTTP/1.1[0m" 500 -
+2025-04-09 14:57:12,721 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:12] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 14:57:12,755 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:12] "[36mGET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-09 14:57:12,772 [INFO] 127.0.0.1 - - [09/Apr/2025 14:57:12] "GET /add?__debugger__=yes&cmd=resource&f=console.png&s=URkdBIQdcNwrpK1zw5cB HTTP/1.1" 200 -
+2025-04-09 14:58:05,940 [INFO]  * Detected change in '\\\\192.168.24.10\\STUDENTS\\22300321\\archi\\archilog\\Lyonnet_Nathan\\archilog-0.1\\src\\archilog\\views\\routes.py', reloading
+2025-04-09 14:58:06,010 [INFO]  * Restarting with stat
+2025-04-09 14:58:10,453 [WARNING]  * Debugger is active!
+2025-04-09 14:58:10,463 [INFO]  * Debugger PIN: 467-516-806
+2025-04-09 14:58:16,653 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:16] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:58:16,747 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:16] "GET /static/styles.css HTTP/1.1" 200 -
+2025-04-09 14:58:18,097 [INFO] BEGIN (implicit)
+2025-04-09 14:58:18,097 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:58:18,097 [INFO] [generated in 0.00259s] ()
+2025-04-09 14:58:18,107 [INFO] ROLLBACK
+2025-04-09 14:58:18,129 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:18] "GET / HTTP/1.1" 200 -
+2025-04-09 14:58:18,170 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:58:19,799 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:19] "GET /add HTTP/1.1" 200 -
+2025-04-09 14:58:19,833 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-04-09 14:58:20,595 [INFO] BEGIN (implicit)
+2025-04-09 14:58:20,595 [INFO] SELECT entries.id, entries.name, entries.amount, entries.category 
+FROM entries
+2025-04-09 14:58:20,595 [INFO] [cached since 2.502s ago] ()
+2025-04-09 14:58:20,595 [INFO] ROLLBACK
+2025-04-09 14:58:20,607 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:20] "GET / HTTP/1.1" 200 -
+2025-04-09 14:58:20,634 [INFO] 127.0.0.1 - - [09/Apr/2025 14:58:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -

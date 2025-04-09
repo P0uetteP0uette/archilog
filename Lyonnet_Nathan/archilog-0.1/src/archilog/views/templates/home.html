@@ -8,6 +8,8 @@
 <body>
     <h1>Gérer votre budget !</h1>
 
+    <p>{{ user["name"] }}</p>
+
     <div class="table-container">
         <h2>Vos entrées de budget</h2>
         <table>
@@ -28,8 +30,12 @@
                     <td>{{ entry.amount }}</td>
                     <td>{{ entry.category }}</td>
                     <td>
-                        <a href="/edit/{{ entry.id }}" class="btn btn-primary">Modifier</a> |
-                        <a href="/delete/{{ entry.id }}" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette entrée ?');">Supprimer</a>
+                        {% if 'admin' in user["roles"] %}
+                            <a href="/edit/{{ entry.id }}" class="btn btn-primary">Modifier</a> |
+                            <a href="/delete/{{ entry.id }}" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cette entrée ?');">Supprimer</a>
+                        {% else %}
+                            <span>Lecture seule</span>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
@@ -38,23 +44,28 @@
     </div>
 
     <!-- Ajout d'une nouvelle entrée -->
+    {% if 'admin' in user["roles"] %}
     <div class="file-actions">
         <a href="/add" class="btn btn-success">Ajouter une nouvelle entrée</a>
     </div>
+    {% endif %}
+
 
     <!-- Formulaire d'import / export CSV -->
     <div class="file-actions">
-        <form method="POST" enctype="multipart/form-data">
+        {% if 'admin' in user["roles"] %}
+        <form method="POST" action="{{ url_for('web.import_csv') }}" enctype="multipart/form-data">
             {{ form.hidden_tag() }}  <!-- Token CSRF pour la sécurité -->
-    
+
             {{ form.file.label }}
             {{ form.file(class="form-control") }}  <!-- Champ de sélection du fichier -->
             {{ form.submit(class="btn btn-primary") }} <!-- remplace le button-->
         </form>
+        {% endif %}
         <br>
+        <!-- Export CSV visible pour tout le monde -->
         <a href="{{ url_for('web.export_csv') }}" class="btn btn-primary">Exporter en CSV</a>
     </div>
-    
 
 </body>
 </html>

@@ -6,14 +6,40 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, DecimalField, FileField, SubmitField
 from wtforms.validators import DataRequired
 
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
+
+
+auth = HTTPBasicAuth()
+
+users = {
+    "admin": {"name": "admin", "password": generate_password_hash("admin"), "roles": ["admin"]},
+    "user": {"name": "user", "password": generate_password_hash("user"), "roles": ["user"]}
+}
+
+def check_admin():
+    user = users.get(auth.current_user())
+    return user and user["role"] == "admin"
+
+@auth.verify_password
+def verify_password(username, password) -> str:
+    user = users.get(username)
+    if user and check_password_hash(user["password"], password):
+        return user  # Retourner le nom d'utilisateur au lieu de True/False
+
+@auth.get_user_roles
+def get_user_roles(user: dict) -> list[str]:
+    return user["roles"]
+
+
 web_ui = Blueprint("web", __name__)
 
-
-@web_ui.route('/', methods=['GET', 'POST'])
+@web_ui.route('/', methods=['GET'])
+@auth.login_required # tous les users connectés peuvent accéder a cette route
 def home():
     entries = models.get_all_entries()
     form = ImportCSVForm()
-    return render_template('home.html', entries=entries, form=form)
+    return render_template('home.html', entries=entries, form=form, user=auth.current_user())
 
 
 
@@ -23,6 +49,7 @@ class AddEntryForm(FlaskForm):
     category = StringField('Catégorie', validators=[DataRequired()])
 
 @web_ui.route('/add', methods=['GET', 'POST'])
+@auth.login_required(role="admin") # seul l'admin peut accéder à cette route
 def add_entry():
     form = AddEntryForm()  # Créer une instance du formulaire
     if form.validate_on_submit():  # Valider le formulaire lorsqu'il est soumis
@@ -46,6 +73,7 @@ class EditEntryForm(FlaskForm):
     category = StringField('Catégorie', validators=[DataRequired()])
 
 @web_ui.route('/edit/<int:id>', methods=['GET', 'POST'])
+@auth.login_required(role="admin")  # seul l'admin peut accéder à cette route
 def edit_entry(id):
     entry = models.get_entry(id)  # Récupérer l'entrée à partir de la base de données
     form = EditEntryForm(obj=entry)  # Créer le formulaire pré-rempli avec les données existantes
@@ -60,6 +88,7 @@ def edit_entry(id):
     return render_template('edit_entry.html', form=form, entry=entry)  # Passer le formulaire et l'entrée au template
 
 @web_ui.route('/delete/<int:id>', methods=['GET'])
+@auth.login_required(role="admin") # seul l'admin peut accéder à cette route
 def delete_entry(id):
     models.delete_entry(id)
     logging.warning(f"L'entrée {id} a été supprimé")
@@ -71,12 +100,15 @@ class ImportCSVForm(FlaskForm):
     file = FileField("Importer un fichier CSV", validators=[DataRequired()])
     submit = SubmitField("Importer")
 
-@web_ui.route('/import_csv', methods=['GET', 'POST'])
+@web_ui.route('/import_csv', methods=['POST'])
+@auth.login_required(role="admin")  # Seul l'admin peut accéder à cette route
 def import_csv():
     form = ImportCSVForm()
-    
+
+    # Flask-WTF nécessite que le formulaire soit instancié avec les données du POST
     if form.validate_on_submit():
         csv_file = form.file.data  # Récupérer le fichier
+
         if not csv_file:
             logging.warning("Aucun fichier n'a été envoyé")
             return redirect(url_for('web.home'))
@@ -86,12 +118,17 @@ def import_csv():
             logging.warning("Import CSV réussi")
         except Exception as e:
             logging.warning(f"Erreur lors de l'import CSV : {e}")
-        
+
         return redirect(url_for('web.home'))
 
-    return render_template('home.html', form=form)
+    # En cas de problème, on recharge la home avec les entrées et le formulaire
+    entries = models.get_all_entries()
+    return render_template('home.html', entries=entries, form=form)
+
+
 
 @web_ui.route('/export_csv', methods=['GET'])
+@auth.login_required # tous les users connectés peuvent accéder a cette route
 def export_csv():
     output = services.export_to_csv()
     return Response(
