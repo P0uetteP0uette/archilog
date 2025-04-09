@@ -1,5 +1,5 @@
 import logging
-from flask import render_template, request, redirect, url_for, Response, Blueprint
+from flask import render_template, redirect, url_for, Response, Blueprint
 import archilog.models as models
 import archilog.services as services
 from flask_wtf import FlaskForm
