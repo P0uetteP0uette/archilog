@@ -12,6 +12,8 @@ dependencies = [
     "flask-httpauth>=4.8.0",
     "spectree>=1.4.5",
     "pydantic>=2.11.3",
+    "wtforms>=3.2.1",
+    "httpauth>=0.4.1",
 ]
 requires-python = ">=3.10"
 
@@ -31,5 +33,7 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.scripts]
-_.env_file = "dev.env"
 start = "flask --app archilog.views --debug run"
+
+[tool.pdm.scripts._]
+env_file = "dev.env"
